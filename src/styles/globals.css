@@ -18,10 +18,22 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  overflow-x: hidden;
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #222;
+}
+html ::-webkit-scrollbar-track {
+  background: #444;
 }
